@@ -4,6 +4,7 @@
     scroll-snap-align: start;
     scroll-snap-stop: always;
     min-height: 100vh; 
+
 }
 
 .hero-label {
@@ -12,7 +13,8 @@
     font-weight: 600;
     text-transform: uppercase;
     padding: 0px 2px 0px 2px;
-    letter-spacing: 0.1em;
+    font-family: var(--font-text);
+    letter-spacing: var(--letter-spacing-text-standar);
 }
 
 .hero-headline {
@@ -20,6 +22,7 @@
     line-height: 1.1;
     margin: 1.5rem 0;
     font-weight: 700;
+    font-family: var(--font-titles);
 }
 
 .hero-gradient {
@@ -33,6 +36,8 @@
     max-width: 600px;
     margin: 0 auto 2.5rem;
     font-size: 1.125rem;
+    font-family: var(--font-text);
+    letter-spacing: var(--letter-spacing-text-standar);
 }
 @media (max-width: 640px) {
     .hero-wrapper {

@@ -3,6 +3,8 @@ button {
     cursor: pointer;
     transition: var(--transition-smooth);
     border: none;
+    font-family: var(--font-text);
+    font-weight: 500;
 }
 
 .btn-primary {
@@ -13,7 +15,6 @@ button {
 .btn-animation{
     color: var(--text-contrast);
     border-radius: 50px;
-    font-weight: 600;
     padding: 0.75rem 1.5rem;
 }
 .btn-animation:hover{
@@ -24,7 +25,6 @@ button {
     background: transparent;
     color: var(--text-primary);
     padding: 0.75rem 1.5rem;
-    font-weight: 600;
     font-size: .9rem;
     letter-spacing: 1px;
 }
@@ -32,7 +32,6 @@ button {
     color: var(--text-contrast);
     background: transparent;
     padding: 0.75rem 1.5rem;
-    font-weight: 600;
     font-size: 1rem;
     letter-spacing: 1px;
     transition: color .1s ease-out, font-size .1s ease-out;

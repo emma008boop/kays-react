@@ -12,7 +12,13 @@ const Home = () => {
         buttonText : "Create account"
     };
     const tag = "Precision Tracking";
-    const title = "Stop guessing, start knowing.";
+    const title = (
+        <>
+            Stop guessing,
+            <br />
+            {"\u00A0\u00A0"}{"\u00A0\u00A0"}{"\u00A0\u00A0"}start knowing.
+        </>
+    );
     const text = "Manage your finances with surgical precision, because clearly your current intuition isn't working";
 
     return (

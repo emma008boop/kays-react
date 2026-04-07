@@ -1,3 +1,7 @@
+
+p{
+    font-family: var(--font-text);
+}
 .main-footer {
     background: var(--background);
     border-top: 1px solid var(--card-border);
@@ -11,6 +15,7 @@
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: -1px;
+    font-family: var(--font-titles);
 }
 
 .footer-brand .dot {
@@ -21,7 +26,9 @@
     display: flex;
     gap: 6rem;
 }
-
+.nav-col{
+    font-family: var(--font-titles);
+}
 .nav-col h4 {
     color: var(--text-primary);
     font-size: 0.8rem;

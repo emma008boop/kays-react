@@ -4,8 +4,6 @@
     
     /* Color Palette */
     --bg-white: white;
-    --accent-blue-gradient: linear-gradient(145deg, #3f86fa 30%, #0043ae 100%);
-    --background: linear-gradient(160deg, #FAFAF8 0%, #F0EDE6 50%, #EAE8F0 100%);
     
     /* Typography */
     --text-primary:#0F0E0C;
@@ -14,6 +12,14 @@
     --text-contrast: white;
     --card-tag: #D97706;
     --card-tag-text: black;
+    
+    --letter-spacing-text-standar: .8px;
+
+    --font-titles: sans-serif;
+    --font-text: 'Roboto', sans-serif;
+
+
+
 
     /* buttons */
     --buttons-color: #042d86;
@@ -36,7 +42,6 @@ html {
 body {
     background-color: var(--bg-black);
     color: var(--text-primary);
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.5;
     overflow-x: hidden;
 }
