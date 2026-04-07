@@ -7,7 +7,7 @@ const Home = () => {
     const HERO_CONTENT = {
         label : "Controll the caos, one click at time",
         tittle : "Put your wallet ",
-        gradient : "under managament.",
+        gradient : "under managament",
         subtext : "Define your goal. Track every cent. Reach it faster.",
         buttonText : "Create account"
     };

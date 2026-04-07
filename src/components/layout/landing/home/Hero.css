@@ -27,6 +27,7 @@
 
 .hero-gradient {
     background: var(--text-primary);
+    font-family: var(--font-titles);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -44,6 +45,12 @@
         padding: 4rem 0 2rem;
         display: flex;
         justify-content: center;
+    }
+    .hero-gradient{
+        padding: 0px 18px 0px 18px;
+    }
+    .hero-subtext{
+        max-width: 300px;
     }
     .auth-controls {
         display: none;
