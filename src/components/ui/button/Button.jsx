@@ -10,5 +10,4 @@ const Button = ({children, variant, animation = 'none', onClick}) => {
     );
 };
 
-
 export default Button;

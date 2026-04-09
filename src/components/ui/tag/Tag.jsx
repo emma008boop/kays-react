@@ -10,7 +10,7 @@ const Tag = ({ tag }) => {
   }, []);
 
   return (
-    <span data-aos="fade-up" className="dinamContainer__tag">{tag}</span>
+    <span data-aos="fade-up" className="mainContent__tag">{tag}</span>
   );
 };
 

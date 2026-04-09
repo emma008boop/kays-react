@@ -1,5 +1,5 @@
 import savingVideo from '../../assets/video/count_savings.mp4';
-import DinamContainer from '../../components/layout/landing/home/DinamContainer';
+import MainContent from '../../components/layout/landing/home/MainContent';
 import Hero from '../../components/layout/landing/home/Hero';
 import './Home.css';
 
@@ -30,7 +30,7 @@ const Home = () => {
                     subtext={HERO_CONTENT.subtext}
                     buttonText={HERO_CONTENT.buttonText}
                 />
-                <DinamContainer videoUrl={savingVideo} tag={tag} text={text} title={title} type='antfocus'></DinamContainer>
+                <MainContent videoUrl={savingVideo} tag={tag} text={text} title={title} type='antfocus'></MainContent>
             </main>
     );
 };
