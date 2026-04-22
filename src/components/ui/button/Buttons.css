@@ -11,7 +11,35 @@ button {
     background: var(--buttons-color);
     font-size: .9rem;
     letter-spacing: .5px;
+    color: var(--text-contrast);
+    border-radius: 12px;
+    padding: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    width: 100%;
 }
+
+.btn-primary:hover {
+    transform: translateY(-6px);
+    background: var(--buttons-color-transition);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover svg {
+    transform: translateX(4px);
+}
+
 .btn-animation{
     color: var(--text-contrast);
     border-radius: 50px;

@@ -26,6 +26,11 @@
     display: flex;
     gap: 1rem;
 }
+
+.auth-controls .btn-primary {
+    width: auto;
+}
+
 .site-header.is-sticky .brand-logo {
     color: var(--text-contrast); 
     transition: color .2s ease-in-out;
