@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import './Buttons.css';
 
-const Button = ({children, variant, animation = 'none', onClick}) => {
+const Button = ({children, variant, animation = 'none', onClick, rute}) => {
     const navigate = useNavigate();
     const className = `btn-${variant} btn-${animation}`;
 
@@ -9,7 +9,7 @@ const Button = ({children, variant, animation = 'none', onClick}) => {
         if (onClick) {
             onClick();
         }
-        navigate('/auth');
+        navigate(rute);
     };
 
     return (
