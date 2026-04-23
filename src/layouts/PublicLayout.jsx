@@ -5,9 +5,7 @@ import Nav from '../components/layout/landing/nav/Nav';
 const PublicLayout = () => {
     return (
         <>
-            <div className="wallpaper-canvas"></div>
-
-            <Nav />
+            <Nav ruteLogin={'/login'} ruteRegister={'/register'}/>
 
             <Outlet />
 
