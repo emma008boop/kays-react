@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react';
 import Button from '../../../ui/button/Button';
 import './Nav.css';
 
-const Nav = () => {
+const Nav = ({ ruteLogin, ruteRegister }) => {
     const [isSticky, setIsSticky] = useState(false);
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,10 +24,10 @@ const Nav = () => {
                 </div>
                 
                 <div className="auth-controls">
-                    <Button variant={isSticky ? 'contrast' : 'secondary'}>
+                    <Button rute={ruteLogin} variant={isSticky ? 'contrast' : 'secondary'}>
                         Log in
                     </Button>
-                    <Button variant='primary' animation='animation'>
+                    <Button variant='primary' rute={ruteRegister} animation='animation'>
                         Create account
                     </Button>
                 </div>
