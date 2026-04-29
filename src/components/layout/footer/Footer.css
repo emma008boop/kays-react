@@ -6,7 +6,7 @@ p{
     background: var(--background);
     border-top: 1px solid var(--card-border);
     padding: 8rem 0 3rem;
-    scroll-snap-align: end;
+    scroll-snap-align: start;
 }
 .footer-top{
     margin-left: 10px;

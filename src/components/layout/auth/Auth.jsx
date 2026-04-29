@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Button from '../../ui/button/Button';
 import './Auth.css';
 
 {/** title, subtitle, buttonText */}
 const Auth = ({ type }) => {
     const [email, setEmail] = useState('');
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
     const isLogin = type === 'login';
@@ -19,12 +20,12 @@ const Auth = ({ type }) => {
         console.log(isLogin ? 'Login' : 'Register:', { email, password });
     };
 
+
     return (
         <>
             <main className="auth-wrapper">
                 <div className="auth-card">
                     <header className="auth-header">
-                        <Link to="/" className="auth-logo">KAYS</Link>
                         <h1>{title}</h1>
                         <p>{subtitle}</p>
                     </header>
@@ -42,6 +43,20 @@ const Auth = ({ type }) => {
                             />
                         </div>
 
+                        {!isLogin && (
+                            <div className="input-group">
+                                <label htmlFor="">Username</label>
+                                <input
+                                    type="text"
+                                    id="username"
+                                    placeholder="username"
+                                    value={username}
+                                    onChange={(e) => setUsername(e.target.value)}
+                                    required
+                                />
+                            </div>
+                        )}
+
                         <div className="input-group">
                             <label htmlFor="password">Password</label>
                             <input
@@ -54,12 +69,9 @@ const Auth = ({ type }) => {
                             />
                         </div>
 
-                        <button type="submit" className="btn-primary">
-                            <span>{buttonText}</span>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </button>
+                        <Button variant="primary" animation='animation'>
+                            {buttonText}
+                        </Button>
                     </form>
                 </div>
             </main>
