@@ -1,7 +1,7 @@
 .mainContent__tag {
     background: var(--card-tag);
     color: var(--text-contrast);
-
+    min-width: 200px;
     display: inline-block;
     backdrop-filter: blur(4px);
     padding: 0.4rem 0.8rem;
