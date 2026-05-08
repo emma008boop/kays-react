@@ -4,6 +4,7 @@ import videoUrl from '../../assets/video/count_savings.mp4';
 import Hero from '../../components/layout/landing/home/Hero';
 import Tag from '../../components/ui/tag/Tag';
 import VideoBackground from '../../components/ui/video/VideoBackground';
+import About from './About';
 import './Home.css';
 import './storySection.css';
 import './valueProposal.css';
@@ -102,6 +103,9 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+
+                <About></About>
+
             </main>
     );
 };
