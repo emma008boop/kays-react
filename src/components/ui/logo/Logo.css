@@ -1,0 +1,16 @@
+/* BrandLogo.css */
+.brand-logo {
+    display: inline-block; 
+    transition: opacity 0.3s ease; 
+    max-width: 50px;      
+}
+.brand-logo:hover {
+    opacity: 0.8;
+}
+
+.brand-logo img {
+    width: 100%;          
+    height: auto;          
+    display: block;        
+    object-fit: contain;   
+}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Button from '../../../ui/button/Button';
+import Logo from '../../../ui/logo/Logo';
 import './Nav.css';
 
 const Nav = ({ ruteLogin, ruteRegister }) => {
@@ -19,9 +20,7 @@ const Nav = ({ ruteLogin, ruteRegister }) => {
     return (
         <header className={`site-header ${isSticky ? 'is-sticky' : ''}`}>
             <nav className="nav-container">
-                <div className="brand-identity">
-                    <span className="brand-logo">KAYS</span>
-                </div>
+                <Logo></Logo>     
                 
                 <div className="auth-controls">
                     <Button rute={ruteLogin} variant={isSticky ? 'contrast' : 'secondary'}>
