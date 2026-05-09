@@ -1,0 +1,16 @@
+.mainContent__tag {
+    background: var(--card-tag);
+    color: var(--text-contrast);
+    min-width: 200px;
+    display: inline-block;
+    backdrop-filter: blur(4px);
+    padding: 0.4rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: var(--font-text);
+    letter-spacing: var(--letter-spacing-text-standar);
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}

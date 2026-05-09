@@ -1,0 +1,152 @@
+button {
+    font-family: inherit;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    border: none;
+    font-family: var(--font-text);
+    font-weight: 500;
+}
+
+.btn-primary {
+    background: var(--buttons-color);
+    font-size: .9rem;
+    letter-spacing: .5px;
+    color: var(--text-contrast);
+    border-radius: 12px;
+    padding: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    width: 100%;
+}
+
+.btn-primary:hover {
+    transform: translateY(-6px);
+    background: var(--buttons-color-transition);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover svg {
+    transform: translateX(4px);
+}
+
+.btn-animation{
+    color: var(--text-contrast);
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+.btn-animation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+.btn-animation:hover::before {
+    left: 100%;
+}
+.btn-animation:hover{
+    background: var(--buttons-color-transition);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.btn-pulse {
+    color: var(--text-contrast);
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(255, 255, 255, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+}
+.btn-pulse:hover {
+    transform: scale(1.05);
+}
+
+.btn-glow {
+    color: var(--text-contrast);
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from { box-shadow: 0 0 10px rgba(255,255,255,0.2), 0 0 20px rgba(255,255,255,0.1); }
+    to { box-shadow: 0 0 20px rgba(255,255,255,0.4), 0 0 40px rgba(255,255,255,0.2); }
+}
+.btn-glow:hover {
+    transform: scale(1.05);
+}
+
+.btn-shake {
+    color: var(--text-contrast);
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+}
+.btn-shake:hover {
+    animation: shake 0.5s ease-in-out;
+}
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px) rotate(-2deg); }
+    75% { transform: translateX(5px) rotate(2deg); }
+}
+
+.btn-bounce {
+    color: var(--text-contrast);
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+}
+.btn-bounce:hover {
+    animation: bounce 0.6s ease;
+}
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    40% { transform: translateY(-20px); }
+    60% { transform: translateY(-10px); }
+    80% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+.btn-rotate {
+    color: var(--text-contrast);
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    transition: transform 0.3s ease;
+}
+.btn-rotate:hover {
+    transform: rotate(5deg) scale(1.05);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--text-primary);
+    padding: 0.75rem 1.5rem;
+    font-size: .9rem;
+    letter-spacing: 1px;
+}
+.btn-contrast{
+    color: var(--text-contrast);
+    background: transparent;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: color .1s ease-out, font-size .1s ease-out;
+}
