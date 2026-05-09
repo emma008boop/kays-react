@@ -9,7 +9,7 @@ const About = () => {
                         Precision in every<br />
                     </h1>
                     <h1 className='display-title title-smaller'> Economic FAILURE.</h1>
-                    <p className="hero-lead">
+                    <p className="hero-text">
                         KAYS was born from the obsession to fix what your emotional spending leaks skills couldn't. 
                         We don’t just track expenses; we audit your lifestyle to make sure you actually afford 
                         your ambitions before the month runs out.
