@@ -2,7 +2,8 @@
 .brand-logo {
     display: inline-block; 
     transition: opacity 0.3s ease; 
-    max-width: 50px;      
+    max-width: 50px;    
+    max-height: 50px;  
 }
 .brand-logo:hover {
     opacity: 0.8;

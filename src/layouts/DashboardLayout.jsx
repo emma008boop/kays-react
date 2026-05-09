@@ -1,16 +1,15 @@
 import { Outlet } from 'react-router-dom';
-import Footer from '../components/layout/footer/Footer';
-import Nav from '../components/layout/landing/nav/Nav';
+import Navbar from '../components/layout/dashboard/nav/Navbar';
+import './DashboardLayout.css';
 
 const DashboardLayout = () => {
     return (
-        <>
-            <Nav ruteLogin={'/login'} ruteRegister={'/register'}/>
-
-            <Outlet />
-
-            <Footer />
-        </>
+        <div className="dashboard-layout">
+            <Navbar />
+            <main className="dashboard-main">
+                <Outlet />
+            </main>
+        </div>
     )
 }
 
